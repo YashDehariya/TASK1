@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Basics Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Web Development Basics Project</h1>
+            <p class="subtitle">HTML, CSS & JavaScript Fundamentals</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="content-grid">
+            <!-- HTML Section -->
+            <div class="card">
+                <h2>HTML Structure & Elements</h2>
+                <p>This webpage demonstrates fundamental HTML elements and proper document structure.</p>
+                
+                <h3>Basic Elements Used:</h3>
+                <ul>
+                    <li><strong>Headings:</strong> H1, H2, H3 for hierarchy</li>
+                    <li><strong>Paragraphs:</strong> Text content organization</li>
+                    <li><strong>Lists:</strong> Ordered and unordered lists</li>
+                    <li><strong>Links:</strong> Navigation and external references</li>
+                    <li><strong>Images:</strong> Visual content integration</li>
+                    <li><strong>Semantic tags:</strong> Header, main, section, footer</li>
+                </ul>
+
+                <div class="links-section">
+                    <h3>Useful Links:</h3>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Documentation</a>
+                    <a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial</a>
+                    <a href="https://html.spec.whatwg.org/" target="_blank">HTML Specification</a>
+                </div>
+            </div>
+
+            <!-- CSS Section -->
+            <div class="card">
+                <h2>CSS Styling & Layout</h2>
+                <p>Advanced CSS techniques including modern layout methods, animations, and responsive design.</p>
+
+                <h3>CSS Features Demonstrated:</h3>
+                <div class="color-demo">
+                    <div class="color-box blue">Blue</div>
+                    <div class="color-box green">Green</div>
+                    <div class="color-box red">Red</div>
+                    <div class="color-box purple">Purple</div>
+                    <div class="color-box orange">Orange</div>
+                </div>
+
+                <div class="text-styles">
+                    <p class="large-text">Large text example</p>
+                    <p class="bold-text">Bold text example</p>
+                    <p class="italic-text">Italic text example</p>
+                    <p class="underline-text">Underlined text example</p>
+                    <p class="center-text">Centered text example</p>
+                </div>
+
+                <div class="spacing-demo">
+                    <p>This box demonstrates padding and margin spacing techniques for better visual hierarchy.</p>
+                </div>
+
+                <div class="layout-demo">
+                    <div class="layout-box">Grid Item 1</div>
+                    <div class="layout-box">Grid Item 2</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="card">
+            <h2>Image Gallery</h2>
+            <p>A responsive image gallery showcasing different web technologies:</p>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="img\HTML5.png" alt="HTML5 Logo" width="500" height="600">
+                    <p>HTML5 - Structure</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img\CSS3.png" alt="CSS3 Logo" width="500" height="600">
+                    <p>CSS3 - Styling</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img\JS.png" alt="JavaScript Logo" width="500" height="600">
+                    <p>JavaScript - Interactivity</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive JavaScript Section -->
+        <div class="interactive-section">
+            <h2>JavaScript Interactivity</h2>
+            <p>Click the buttons below to see JavaScript in action:</p>
+            
+            <button class="btn" onclick="showAlert()">Show Alert Message</button>
+            <button class="btn" onclick="changeBackgroundColor()">Change Background</button>
+            <button class="btn" onclick="getCurrentTime()">Show Current Time</button>
+            <button class="btn" onclick="toggleContent()">Toggle Hidden Content</button>
+            
+            <div id="hiddenContent" style="display: none; margin-top: 1rem; padding: 1rem; background: #ecf0f1; border-radius: 10px;">
+                <h3>🎉 Hidden Content Revealed!</h3>
+                <p>This content was hidden and revealed using JavaScript DOM manipulation.</p>
+            </div>
+            
+            <div id="timeDisplay" style="margin-top: 1rem; font-size: 1.2rem; font-weight: bold; color: #2c3e50;"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Web Development Basics Project</p>
+            <p>Created with HTML5, CSS3, and JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
